@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import styles from './app.css';
-import ReactImage from './react.png';
 import TwitterSearch from './TwitterSearch/TwitterSearch';
 
 export default class App extends Component {
