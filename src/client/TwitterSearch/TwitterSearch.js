@@ -39,7 +39,7 @@ export default class App extends Component {
               required
               size="30"
               minLength="4"
-              maxLength="8"
+              maxLength="25"
             />
             <button>Search</button>
             <span className={styles.valid} />
@@ -58,7 +58,7 @@ export default class App extends Component {
               required
               size="30"
               minLength="4"
-              maxLength="8"
+              maxLength="25"
             />
             <button>Search</button>
             <span className={styles.valid} />

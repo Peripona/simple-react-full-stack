@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styles from './app.css';
+
 import TwitterSearch from './TwitterSearch/TwitterSearch';
 
 export default class App extends Component {
@@ -13,8 +15,9 @@ export default class App extends Component {
   render() {
     const { username } = this.state;
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+      <div className={styles.app}>
+        {username ? <h1 className={styles.greenText}>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+        <div className={styles.img}></div>
         <h2>Enter username in the search to read his tweets</h2>
         <TwitterSearch />
       </div>
